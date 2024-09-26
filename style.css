@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Default styles */
+h1, h2, h3, h5, p {
+    color: #000000;
+}
+
+/* First section styles */
+.first-sec h1 {
+    font-family: "Dancing Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: calc(3vw + 20px);
+}
+
+.first-sec .name-highlight {
+    color: #5ceae0;
+}
+
+.first-sec h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: calc(2vw + 10px);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.first-sec p {
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: calc(1vw + 3px);
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Second section styles */
+.second-sec .top-right h3 {
+    font-family: "Dancing Script", cursive;
+    color: #000000;
+    /* Add other styles as needed */
+}
+
+.second-sec .bottom-left h5 {
+    font-family: "Dancing Script", cursive;
+    transform: translateY(10px);
+    /* Add other styles as needed */
+}
+
+.second-sec .bottom-right h2 {
+    font-family: "Luckiest Guy", cursive;
+    color: #fda6a6;
+    margin-bottom: 15px;
+}
+
+/* Third section styles */
+.third-sec h1 {
+    font-family: "Sriracha", cursive;
+    font-size: calc(3vw + 20px);
+    text-align: center;
+    margin: 0;
+}
+
+.third-sec h2 {
+    color: rgb(27, 208, 208);
+    font-family: "Sriracha", cursive;
+    font-size: calc(2vw + 10px);
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+.third-sec h3 {
+    color: rgb(27, 208, 208);
+    font-family: "Sriracha", cursive;
+    font-size: calc(1vw + 8px);
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 15px;
+}
+
+.third-sec p {
+    color: rgb(0, 0, 0);
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: calc(1vw + 3px);
+    text-align: justify;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px 10px;
+}
+
+/* Other styles remain the same */
+.half-width {
+    width: 45%;
+    float: left;
+    padding-left: 5%;
+    padding-right: 0;
+}
+
+.half-width-shadow1 {
+    flex: 1;
+    padding: 20px;
+    margin-left: calc(10vh);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-sizing: content-box;
+    border-left: 3px solid;
+    border-image: linear-gradient(orange, cyan);
+    border-image-slice: 1;
+}
+
+.half-width-shadow2 {
+    flex: 1;
+    padding: 20px;
+    margin-right: calc(10vh);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-sizing: content-box;
+    border-right: 3px solid;
+    border-image: linear-gradient(orange, cyan);
+    border-image-slice: 1;
+}
+
+
+.half-width img {
+    width: 100%;
+    height: auto;
+}
+
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 5%;
+    width: auto;
+    padding: 10px;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 10px;
+    left: 5%;
+    width: auto;
+    padding: 10px;
+}
+
+.bottom-right {
+    position: absolute;
+    top: 200px;
+    right: 5%;
+    width: calc(2vw + 150px);
+    font-size: calc(1vw + 3px);
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.first-sec {
+    background-image: url(images/ai-generated-8662021.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    height: auto;
+    min-height: 100vh;
+}
+
+.second-sec {
+    background-image: url(images/f64c93fb-e281-4280-8b73-33ef07f83f26.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    padding: 0;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.third-sec {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    background-image: url(images/mjh-shikder-U62hhCof3xA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    box-sizing: content-box;
+    position: relative;
+    z-index: 1;
+}
+
+.title-row {
+    flex: 0 1 10vh; /* Takes up 20% of the height (adjust as needed) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-row h1 {
+    font-family: "Sriracha", cursive;
+    font-size: calc(3vw + 20px);
+    margin: 0;
+    color: #030303;
+}
+
+.content-row {
+    flex: 1 1 auto; /* Takes up the rest of the height */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+.link-hire-me {
+    text-decoration: none;
+    background-image: linear-gradient(45deg, white, #ec7186);
+    padding: calc(1vw + 5px) calc(1vw + 5px);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: calc(.5vw + 10px);
+    display: inline-block;
+    transition: transform 3ms ease;
+    transform: translateY(-10px);
+}
+
+.link-hire-me:hover {
+    transform: scale(1.05);
+}
+
+.link-lets-go {
+    text-decoration: none;
+    background-image: linear-gradient(135deg, rgb(166, 254, 172), green);
+    padding: calc(.5vw + 5px) calc(.5vw + 5px);
+    border-radius: 5px;
+    color: #000000;
+    font-weight: 700;
+    font-size: calc(.5vw + 8px);
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.link-lets-go:hover {
+    transform: scale(1.05);
+}
+
+.third-sec footer p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: rgb(183, 255, 82);
+    font-size: calc(.5vw + 5px);
+}
